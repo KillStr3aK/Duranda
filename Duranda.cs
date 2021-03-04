@@ -297,7 +297,7 @@ namespace Duranda
 				ZoneSystem.LocationInstance locationInstance;
 				ZoneSystem.instance.FindClosestLocation("Vendor_BlackForest", localPlayer.transform.position, out locationInstance);
 				Minimap.instance.DiscoverLocation(locationInstance.m_position, Minimap.PinType.Icon3, "Merchant");
-				Console.WriteLine($"Merchant position: X: {locationInstance.m_position} Y: {locationInstance.m_position.y} Z: {locationInstance.m_position.z}");
+				Console.WriteLine($"Merchant position: X: {locationInstance.m_position.x} Y: {locationInstance.m_position.y} Z: {locationInstance.m_position.z}");
 			}));
 
 			Console.RegisterCommand("healself", "Heal to maxhealth.", new ConsoleCommandCallback((args) =>
